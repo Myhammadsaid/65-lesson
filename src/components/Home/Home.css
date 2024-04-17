@@ -128,12 +128,18 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ccc;
+    background-color: #000;
     transition: 0.5s;
   }
 
   .menu-btn {
     display: flex;
+  }
+  .nav-item {
+    color: #fff;
+  }
+  .nav-link {
+    color: #fff;
   }
   .hero-links {
     gap: 10px !important;

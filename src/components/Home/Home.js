@@ -1,7 +1,12 @@
-import React, { memo } from "react";
+import React, { memo, useState } from "react";
 import "./Home.css";
 
 function Home(props) {
+  const [showNav, setShowNav] = useState(false);
+
+  const toggleNav = () => {
+    setShowNav(!showNav);
+  };
   return (
     <div>
       <header>
@@ -31,7 +36,10 @@ function Home(props) {
                 ></path>
               </svg>
             </a>
-            <div className="nav-links" id="navbar-responsive">
+            <div
+              className={`nav-links ${showNav ? "open" : ""}`}
+              id="navbar-responsive"
+            >
               <a href="#" className="nav-link">
                 Shop
               </a>
@@ -103,10 +111,10 @@ function Home(props) {
                 </svg>
               </a>
             </div>
-            <button class="menu-btn" id="menu-btn">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
+            <button className="menu-btn" id="menu-btn" onClick={toggleNav}>
+              <span className="line"></span>
+              <span className="line"></span>
+              <span className="line"></span>
             </button>
           </nav>
         </div>
