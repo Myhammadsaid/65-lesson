@@ -37,6 +37,65 @@ nav {
   font-weight: 600;
 }
 
+.cards {
+  margin-bottom: 50px;
+}
+
+.cards-title {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.cards-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.cards-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.box {
+  max-width: 440px;
+  background: #f4f4f4;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.box img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.card-price {
+  color: #007aff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .hero {
   padding: 50px;
 }
