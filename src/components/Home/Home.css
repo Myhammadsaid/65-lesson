@@ -1,0 +1,144 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+  padding: 15px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: 600;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-item {
+  font-weight: 600;
+}
+
+.hero {
+  padding: 50px;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 450px;
+}
+
+.hero-title {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.hero-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.hero-link {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hero-text {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-par {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.hero-btn {
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#navbar-responsive.open {
+  left: 0;
+}
+
+.menu-btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  display: none;
+}
+
+.menu-btn span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1115px) {
+  #navbar-responsive {
+    position: fixed;
+    top: 120px;
+    bottom: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    transition: 0.5s;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+  .hero-links {
+    gap: 10px !important;
+  }
+  .hero {
+    padding: 20px !important;
+  }
+}
