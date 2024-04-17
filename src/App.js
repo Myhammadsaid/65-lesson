@@ -1,6 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 import "./App.css";
 import Home from "./components/Home/Home";
+import Cards from "./components/Cards/Cards";
 
 function App() {
   let items1 = [
@@ -15,6 +16,7 @@ function App() {
   let items4 = ["Certified Re-Newed", "How to recycle"];
   return (
     <div className="App">
+      <Cards />
       <Home
         title="Mobile & Computing"
         items1={items1}
@@ -51,4 +53,4 @@ function App() {
   );
 }
 
-export default App;
+export default memo(App);
